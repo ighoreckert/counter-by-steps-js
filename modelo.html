@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super contador</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vamos contar</h1>
+    </header>
+    <section>
+      <div id="data">
+        <p>
+          Inicio:
+          <input type="number" name="initial" id="initialNumber" min="0" />
+        </p>
+        <p>
+          Fim:
+          <input type="number" name="ended" id="endNumber" min="0" />
+        </p>
+        <p>
+          Passo:
+          <input type="number" name="step" id="stepNumber" min="0" />
+        </p>
+
+        <input type="button" value="Contar" onclick="calcNumber()" />
+      </div>
+
+      <div id="res">
+        <p>Preparando a contagem...</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Ighor Eckert</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
